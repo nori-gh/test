@@ -1,0 +1,17 @@
+name: Self-Hosted Runner Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-job:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run custom action
+        uses: ./custom-action
+

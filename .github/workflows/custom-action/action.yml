@@ -1,0 +1,8 @@
+name: "Test Message Action"
+description: "テストメッセージを出力するカスタムアクション"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "セルフホステッドランナーでカスタムアクションが実行されました！"
+      shell: bash
+
